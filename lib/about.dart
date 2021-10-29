@@ -36,7 +36,7 @@ class _AboutPageState extends State<AboutPage> {
                 height: MediaQuery.of(context).size.height / 3,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("assets/logo.jpg")
+                        image: AssetImage("assets/Logo.png")
                     )
                 )
             ),

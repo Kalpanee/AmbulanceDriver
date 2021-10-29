@@ -9,24 +9,11 @@ class SignUpPage extends StatelessWidget{
     return Scaffold(
       resizeToAvoidBottomInset: true,
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        elevation: 0,
-        brightness: Brightness.light,
-        backgroundColor: Colors.white,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: Icon(Icons.arrow_back_ios,
-            size: 20,
-            color: Colors.black,),
-        ),
-      ),
 
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 40),
-          height: MediaQuery.of(context).size.height - 50,
+          padding: EdgeInsets.symmetric(horizontal:20, vertical: 50),
+          height: MediaQuery.of(context).size.height,
           width: double.infinity,
 
           child: Column(
@@ -69,9 +56,9 @@ class SignUpPage extends StatelessWidget{
                 ),
                 child: MaterialButton(
                   minWidth: double.infinity,
-                  height: 60,
+                  height: 50,
                   onPressed: () {},
-                  color: Color(0xf8e3609c),
+                  color: Colors.redAccent,
                   elevation: 0,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(50),

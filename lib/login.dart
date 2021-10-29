@@ -13,22 +13,9 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        elevation: 0,
-        brightness: Brightness.light,
-        backgroundColor: Colors.white,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: Icon(Icons.arrow_back_ios,
-            size: 20,
-            color: Colors.black,),
 
-
-        ),
-      ),
       body: Container(
+        padding: EdgeInsets.symmetric(vertical: 50),
         height: MediaQuery.of(context).size.height,
         width: double.infinity,
         child: Column(
@@ -77,11 +64,11 @@ class LoginPage extends StatelessWidget {
                     ),
                     child: MaterialButton(
                       minWidth: double.infinity,
-                      height: 60,
+                      height: 50,
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(builder: (context)=> MapPage()));
                       },
-                      color: Color(0xf8e3609c),
+                      color: Colors.redAccent,
                       elevation: 0,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50),
@@ -126,7 +113,7 @@ class LoginPage extends StatelessWidget {
                   height: 200,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("assets/redcross.jpg"),
+                        image: AssetImage("assets/Redcross.png"),
                         fit: BoxFit.fitHeight
                     ),
 

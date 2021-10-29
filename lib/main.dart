@@ -39,7 +39,7 @@ class Welcome extends StatelessWidget {
         child: Container(
           width: double.infinity,
             height: MediaQuery.of(context).size.height,
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 50),
+          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 80),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -49,7 +49,7 @@ class Welcome extends StatelessWidget {
               Text("WELCOME",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 30,
+                fontSize: 40,
 
               ),
 
@@ -57,21 +57,13 @@ class Welcome extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              Text('We Are There Whenever You Need',
-              textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.grey[700],
-                  fontSize: 15,
-
-                ),
-              )
             ],
           ),
               Container(
                 height: MediaQuery.of(context).size.height / 3,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/welcome.png")
+                    image: AssetImage("assets/Logo.png")
                   )
                 )
                 ),
@@ -109,7 +101,7 @@ class Welcome extends StatelessWidget {
                       Navigator.push(context, MaterialPageRoute(builder: (context)=> SignUpPage()));
 
                     },
-                    color: Color(0xff0095FF),
+                    color: Colors.redAccent,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(50)
                     ),
