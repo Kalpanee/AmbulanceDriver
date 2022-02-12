@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 //import 'package:device_preview/device_preview.dart';
 //Pages
@@ -59,15 +58,30 @@ class Welcome extends StatelessWidget {
               ),
             ],
           ),
+
               Container(
                 height: MediaQuery.of(context).size.height / 3,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/Logo.png")
+                    image: AssetImage("assets/Logo1.png")
                   )
-                )
                 ),
+        ),
+              Column(
+                children:[
+                  Text("DRIVER PARTNER",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      color: Colors.blue
+                    ),
 
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                ],
+              ),
               Column(
                 children: [
                   //Login Button
@@ -116,8 +130,6 @@ class Welcome extends StatelessWidget {
                   )
                 ],
               )
-
-
           ],
         ),
       ),

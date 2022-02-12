@@ -90,19 +90,19 @@ class LoginPage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Don't have an account?",style: TextStyle(fontWeight: FontWeight.w400,fontSize: 16,),),
+                    Text("Don't have an account?Sign up from here",style: TextStyle(fontWeight: FontWeight.w400,fontSize: 16,),),
                     MaterialButton(
                       onPressed: (){
                         Navigator.push(context, MaterialPageRoute(builder: (context)=> SignUpPage()));
                       },
                       child: Text(
-                      "Sign up",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18
+                        "Sign up",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 18
+                        ),
                       ),
-                    ),
                     )
 
                   ],

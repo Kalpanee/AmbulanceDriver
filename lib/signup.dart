@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ambulance_tracking/signup.dart';
+import 'package:ambulance_tracking/reusable_widget.dart';
 
 //Pages
 import './login.dart';
@@ -36,7 +37,7 @@ class SignUpPage extends StatelessWidget{
               ),
               Column(
                 children: [
-                  inputFile(label: "Name"),
+                  inputFile(label: "Name",),
                   inputFile(label: "Mobile Number"),
                   inputFile(label: "E-Mail"),
                   // inputFile(label: "Confirm Password ", obscureText: true),
