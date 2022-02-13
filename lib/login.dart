@@ -39,8 +39,8 @@ class LoginPage extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 40),
                   child: Column(
                     children: [
-                      inputFile(label: "Mobile Number"),
-                      //inputFile(label: "Password", obscureText: true)
+                      inputFile(label: "User name"),
+                      inputFile(label: "Password", obscureText: true)
                     ],
                   ),
                 ),
